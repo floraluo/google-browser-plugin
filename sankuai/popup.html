@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./popup.css" />
+  </head>
+  <body>
+    <template id="li_template">
+      <li>
+        <a>
+          <h3 class="title">Tab Title</h3>
+          <p class="pathname">Tab Pathname</p>
+        </a>
+      </li>
+    </template>
+    <!-- <template id="tab_template">
+      <div class="tab">
+        <ul></ul>
+      </div>
+    </template>
+    <template id="tab_title_template">
+      <div>
+        <span class="group-name"> group name</span>
+      </div>
+    </template> -->
+
+    <h1>标签页分组</h1>
+    <div class="button-container">
+      <button id="xuecheng">学城</button>
+      <button id="talos">talos</button>
+    </div>
+    <div class="custom-group-container">
+      <div class="data">
+        <label>名称: <input id="groupName"/></label>
+        <label>地址: <textarea id="groupUrl" cols="25" rows="2"></textarea></label>
+      </div>
+      <button id="customGroup">分组</button>
+    </div>
+    <ul></ul>
+    <script src="./popup.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+body {
+  width: 20rem;
+}
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+  margin: 1rem 0;
+}
+
+li {
+  padding: 0.25rem;
+}
+li:nth-child(odd) {
+  background: #80808030;
+}
+li:nth-child(even) {
+  background: #ffffff;
+}
+
+h3,
+p {
+  margin: 0;
+}
+.button-container{
+  margin-bottom: 10px;
+}
+button{
+  width: 60px;
+  height: 24px;
+}
+.custom-group-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.custom-group-container label {
+  display: block;
+  margin-top: 10px;
+}
+.custom-group-container label input{
+  width: 200px;
+}
+.tab-title-container{
+  display: flex;
+  justify-content: space-around;
+}
+.group-name {
+  cursor: pointer;
+  color: #333;
+}
+.tab{
+  display: none;
+}
