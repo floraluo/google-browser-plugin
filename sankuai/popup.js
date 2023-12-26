@@ -12,6 +12,29 @@ const groups = {
     url: [
       'https://talos.sankuai.com/*'
     ]
+  },
+  mbr_config: {
+    name: 'MBR配置后台',
+    url: [
+      'http://localhost:5555/*',
+      'https://mdata.sankuai.com/xbr/manage/*',
+      'https://mdata.sjst.st.sankuai.com/xbr/manage/*',
+      'https://mdata.sjst.test.sankuai.com/xbr/manage/*',
+      'https://1960-lnruv-sl-mdata.sjst.test.sankuai.com/xbr/manage/*',
+      'https://1960-fkork-sl-mdata.sjst.test.sankuai.com/xbr/manage/*',
+      'https://1960-flfin-sl-mdata.sjst.test.sankuai.com/xbr/manage/*',
+    ]
+  },
+  mbt_runtime: {
+    name: 'MBR前台',
+    url: [
+      'https://.*mdata.sankuai.com/steamer/steamer-mbr-config-pages/*',
+      'https://mdata.sjst.st.sankuai.com/steamer/steamer-mbr-config-pages/*',
+      'https://mdata.sjst.test.sankuai.com/steamer/steamer-mbr-config-pages/*',
+      'https://1960-lnruv-sl-mdata.sjst.test.sankuai.com/steamer/steamer-mbr-config-pages/*',
+      'https://1960-fkork-sl-mdata.sjst.test.sankuai.com/steamer/steamer-mbr-config-pages/*',
+      'https://1960-flfin-sl-mdata.sjst.test.sankuai.com/steamer/steamer-mbr-config-pages/*',
+    ]
   }
 }
 // 自动设置当前窗口地址
