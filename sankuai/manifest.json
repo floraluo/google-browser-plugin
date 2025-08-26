@@ -1,6 +1,6 @@
 {
-  "name": "sankuai小插件",
-  "description" : "浏览sankuai的小插件",
+  "name": "浏览器自动分组小插件",
+  "description" : "浏览浏览器自动分组的小插件",
   "version": "1.0",
   "manifest_version": 3,
   "icons": { 

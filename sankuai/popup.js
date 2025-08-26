@@ -1,41 +1,67 @@
+const { join } = require("path")
 
 const groups = {
-  xuecheng: {
-    name: '学城',
+  // xuecheng: {
+  //   name: '学城',
+  //   url: [
+  //     'https://km.sankuai.com/*',
+  //     'https://km.sankuai.com/page/*'
+  //   ]
+  // }, 
+  // talos: {
+  //   name: 'talos',
+  //   url: [
+  //     'https://talos.sankuai.com/*'
+  //   ]
+  // },
+  // mbr_config: {
+  //   name: 'MBR配置后台',
+  //   url: [
+  //     'http://localhost:5555/*',
+  //     'https://mdata.sankuai.com/xbr/manage/*',
+  //     'https://mdata.sjst.st.sankuai.com/xbr/manage/*',
+  //     'https://mdata.sjst.test.sankuai.com/xbr/manage/*',
+  //     'https://1960-lnruv-sl-mdata.sjst.test.sankuai.com/xbr/manage/*',
+  //     'https://1960-fkork-sl-mdata.sjst.test.sankuai.com/xbr/manage/*',
+  //     'https://1960-flfin-sl-mdata.sjst.test.sankuai.com/xbr/manage/*',
+  //   ]
+  // },
+  // mbt_runtime: {
+  //   name: 'MBR前台',
+  //   url: [
+  //     'https://.*mdata.sankuai.com/steamer/steamer-mbr-config-pages/*',
+  //     'https://mdata.sjst.st.sankuai.com/steamer/steamer-mbr-config-pages/*',
+  //     'https://mdata.sjst.test.sankuai.com/steamer/steamer-mbr-config-pages/*',
+  //     'https://1960-lnruv-sl-mdata.sjst.test.sankuai.com/steamer/steamer-mbr-config-pages/*',
+  //     'https://1960-fkork-sl-mdata.sjst.test.sankuai.com/steamer/steamer-mbr-config-pages/*',
+  //     'https://1960-flfin-sl-mdata.sjst.test.sankuai.com/steamer/steamer-mbr-config-pages/*',
+  //   ]
+  // },
+  juejin: {
+    name: '掘金',
     url: [
-      'https://km.sankuai.com/*',
-      'https://km.sankuai.com/page/*'
-    ]
-  }, 
-  talos: {
-    name: 'talos',
-    url: [
-      'https://talos.sankuai.com/*'
+      'https://juejin.cn/*',
     ]
   },
-  mbr_config: {
-    name: 'MBR配置后台',
+  taobao: {
+    name: '淘宝',
     url: [
-      'http://localhost:5555/*',
-      'https://mdata.sankuai.com/xbr/manage/*',
-      'https://mdata.sjst.st.sankuai.com/xbr/manage/*',
-      'https://mdata.sjst.test.sankuai.com/xbr/manage/*',
-      'https://1960-lnruv-sl-mdata.sjst.test.sankuai.com/xbr/manage/*',
-      'https://1960-fkork-sl-mdata.sjst.test.sankuai.com/xbr/manage/*',
-      'https://1960-flfin-sl-mdata.sjst.test.sankuai.com/xbr/manage/*',
+      'https://.*.taobao.com/*',
+      'https://.*.tmall.com/*',
+      'https://.*.alicdn.com/*',
+      'https://.*.1688.com/*',
+      'https://.*.taobao.com/market/*',
+      'https://.*.tmall.com/market/*',
+      'https://.*.alicdn.com/market/*',
     ]
   },
-  mbt_runtime: {
-    name: 'MBR前台',
+  github: {
+    name: 'Github',
     url: [
-      'https://.*mdata.sankuai.com/steamer/steamer-mbr-config-pages/*',
-      'https://mdata.sjst.st.sankuai.com/steamer/steamer-mbr-config-pages/*',
-      'https://mdata.sjst.test.sankuai.com/steamer/steamer-mbr-config-pages/*',
-      'https://1960-lnruv-sl-mdata.sjst.test.sankuai.com/steamer/steamer-mbr-config-pages/*',
-      'https://1960-fkork-sl-mdata.sjst.test.sankuai.com/steamer/steamer-mbr-config-pages/*',
-      'https://1960-flfin-sl-mdata.sjst.test.sankuai.com/steamer/steamer-mbr-config-pages/*',
+      'https://github.com/*',
+      'https://gist.github.com/*',
     ]
-  }
+  },
 }
 // 自动设置当前窗口地址
 await chrome.tabs.query({
